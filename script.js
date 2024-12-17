@@ -10,7 +10,8 @@ const responses = {
     "woilah 🗿": "Yaudah mau gimana lagi 😁",
     "lu aja mau gak?":"Najis 🤮",
     "gw shutdown lu anj 🗿🫵":"Iyadeh jangan ya sayang 😭",
-    "huek 🤮":"gblk 🗿"
+    "huek 🤮":"gblk 🗿",
+    "":"gak jelas bat lu sumpah 🗿"
 };
 
 function findBestMatch(userMessage) {
