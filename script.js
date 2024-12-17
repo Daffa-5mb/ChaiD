@@ -11,7 +11,7 @@ const responses = {
     "lu aja mau gak?": "Najis 🤮",
     "gw shutdown lu anj 🗿🫵": "Iyadeh jangan ya sayang 😭",
     "huek 🤮": "gblk 🗿",
-    "hehe 😁": "gak jelas bat lu sumpah 🗿"
+    "hehe 😁": "gak jelas lu sumpah 🗿"
 };
 
 function findBestMatch(userMessage) {
