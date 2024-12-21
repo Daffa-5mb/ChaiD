@@ -44,14 +44,15 @@ function findBestMatch(userMessage) {
     const lowerCaseMessage = userMessage.toLowerCase();
     for (const key in responses) {
         if (lowerCaseMessage.includes(key)) {
-            return responses[key];
+            const possibleResponses = responses[key];
+            return possibleResponses[Math.floor(Math.random() * possibleResponses.length)];
         }
     }
-    return "Ketik yang bener, gak ngerti gw 🗿.";
+    return "Maaf saya tidak mengerti 🗿.";
 }
 
 sendButton.addEventListener('click', () => {
-    const userMessage = userInput.value;
+    const userMessage = userInput.value.trim(); // Hilangkan spasi di awal/akhir
     if (userMessage) {
         chatbox.innerHTML += `<div class="user-message"><strong>Lu:</strong> <span class="message">${userMessage}</span></div>`;
         userInput.value = '';
