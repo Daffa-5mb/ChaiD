@@ -149,14 +149,22 @@ sendButton.addEventListener('click', () => {
     if (userMessage) {
         chatbox.innerHTML += `<div class="user-message"><strong>Anda:</strong> <span class="message">${sanitizeHTML(userMessage)}</span></div>`;
         userInput.value = '';
-        
+
+        // Menampilkan indikator mengetik
+        const typingIndicator = document.createElement('div');
+        typingIndicator.className = 'ai-message';
+        typingIndicator.innerHTML = `<strong>AI:</strong> <span class="typing-indicator"></span>`;
+        chatbox.appendChild(typingIndicator);
+        chatbox.scrollTop = chatbox.scrollHeight; // Scroll ke bawah
+
         // Menentukan respons AI berdasarkan input pengguna
         const aiResponse = findBestMatch(userMessage);
 
         setTimeout(() => {
+            chatbox.removeChild(typingIndicator); // Hapus indikator mengetik
             chatbox.innerHTML += `<div class="ai-message"><strong>AI:</strong> <span class="message">${sanitizeHTML(aiResponse)}</span></div>`;
             chatbox.scrollTop = chatbox.scrollHeight; // Scroll ke bawah
-        }, 1000);
+        }, 2000); // Durasi animasi mengetik sebelum menampilkan respons
     }
 });
 
