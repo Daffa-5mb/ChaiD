@@ -34,13 +34,23 @@ const responses = {
     ],
     "tumis sayur sehat": [
         "Resep Tumis Sayur Sehat:\n" +
-        "1. Siapkan sayur seperti kangkung, bayam, atau sawi. Cuci bersih.\n" +
-        "2. Panaskan minyak di wajan.\n" +
-        "3. Tumis bawang putih hingga harum.\n" +
-        "4. Masukkan sayur, aduk rata.\n" +
-        "5. Tambahkan sedikit air, garam, dan kaldu bubuk.\n" +
-        "6. Masak hingga sayur layu tapi masih segar.\n" +
-        "7. Sajikan hangat."
+        "Bahan-bahan:\n" +
+        "1. 3 lonjor kacang panjang, potong².\n" +
+        "2. 1 bh wortel, iris.\n" +
+        "3. 8 lbr sawi hijau, potong².\n" +
+        "4. 4 ekor cumi, potong².\n" +
+        "5. Secukupnya garam.\n" +
+        "6. Secukupnya kaldu jamur.\n" +
+        "7. 1 sdm tepung maizena + 2 sdm air.\n" +
+        "8. 3 sdm minyak goreng.\n" +
+        "Bumbu halus:\n" +
+        "2 siung bawang putih ukuran besar.\n" +
+        "1/4 sdt merica bubuk.\n" +
+        "Cara membuat:\n" +
+        "Siapkan bahan sayuran. Cuci bersih cumi.\n" +
+        "Panaskan minyak, tumis bumbu halus hg wangi. Masukan cumi, aduk². Masukan wortel dan kacang panjang, masak hingga separo matang.\n" +
+        "Masukan sawi, beri garam dan kaldu jamur, aduk² hg tercampur rata dan sayuran matang. Angkat, sajikan.\n" +
+        "Selamat menikmati 😉"
     ],
     "cuci piring capek nih": [
         "Sabar ya, Bu. Setelah ini bisa rebahan! 🛏️",
