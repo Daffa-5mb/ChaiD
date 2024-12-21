@@ -46,7 +46,7 @@ const responses = {
         "3 buah telur ceplook\n" +
         "Cara memasak:\n" +
         "1. Panaskan minyak. Tumis bumbu tumbuk kasar sampai harum. Sisihkan di pinggir wajan. Masukkan telur. Aduk sampai berbutir.\n" +
-        "2. Tambahkan ayam, udang, bakso. Aduk rata. Tambahkan nasi putih. Aduk- aduk. Masukkan KECAP MANIS BANGO, garam, dan gula pasir. Aduk sampai matang.\n" +
+        "2. Tambahkan ayam, udang, bakso. Aduk rata. Tambahkan nasi putih. Aduk- aduk. Masukkan kecap manis, garam, dan gula pasir. Aduk sampai matang.\n" +
         "3. Masukkan daun bawang. Aduk rata. Sajikan bersama telur ceplok dan taburan bawang merah goreng.\n" +
         "Selamat menikmati 😋"
     ],
