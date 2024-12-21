@@ -53,9 +53,9 @@ const responses = {
         "Pakai listrik dan air secukupnya, hemat banget!"
     ],
     "siapa pembuatmu?": [
-        "Saya dibuat sama Daffa. Orangnya asik banget! 😄",
-        "Yang bikin saya Daffa, programmer muda berbakat! 🗿",
-        "Ini semua karya Daffa, hebat ya!"
+        "Saya dibuat sama Daffa. Orangnya asik banget... yah, kadang 🗿",
+        "Yang bikin saya Daffa, bergadang mulu cuma buat bikin saya 🗿",
+        "Ini semua karya Daffa"
     ],
     "terima kasih": [
         "Sama-sama, Bu. Senang bisa bantu! 😊",
@@ -74,7 +74,7 @@ const responses = {
     ],
     "kamu bisa apa?": [
         "Saya bisa bantu ngobrol dan kasih saran, Bu.",
-        "Bantu ibu-ibu rumah tangga aja, Bu. 😊",
+        "Bantu jawab pertanyaan aja, Bu. 😊",
         "Gak banyak, tapi saya setia bantu kapan aja!"
     ],
     "aku kesel nih": [
