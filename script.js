@@ -8,13 +8,13 @@ const responses = {
         "Halo, ada yang bisa saya bantu? 😊",
         "Hai! Lagi masak apa nih? 🧑‍🍳"
     ],
-    "sakit":[
+    "saya sakit":[
         "Istirahat aja dulu bu, kalo dibiarin takutnya malah nambah parah, semoga cepat sembuh ya bu!"
     ],
     "saya sehat": [
         "Alhamdulillah, ada yang bisa dibantu bu?"
     ],
-    "baik":[
+    "saya baik":[
         "Alhamdulillah, ada yang bisa dibantu bu?"
     ],
     "apa menu hari ini?": [
