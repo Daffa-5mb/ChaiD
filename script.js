@@ -6,7 +6,7 @@ const responses = {
     "halo": [
         "Halo, Bu! Gimana hari ini?",
         "Halo, ada yang bisa saya bantu? 😊",
-        "Hai! Lagi masak apa nih? 🧑‍🍳"
+        "Hai! Ada ada yang bisa dibantu? 😄"
     ],
     "saya sakit":[
         "Istirahat aja dulu bu, kalo dibiarin takutnya malah nambah parah, semoga cepat sembuh ya bu!"
