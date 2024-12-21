@@ -22,6 +22,10 @@ const responses = {
         "Kalau bingung, masak mie instan aja, Bu. Simpel tapi nikmat! 🍜",
         "Saran saya sih bikin tumis sayur sehat, Bu!"
     ],
+    "ada yang lain?" : [
+        "Saran saya sih bikin tumis sayur sehat, Bu!",
+        "Coba bikin nasi goreng spesial, pasti enak!"
+    ],
     "nasi goreng spesial": [
         "Resep Nasi Goreng Spesial:\n" +
         "Bahan-bahan:\n" +
