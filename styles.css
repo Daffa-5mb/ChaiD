@@ -59,11 +59,10 @@ h1 {
     overflow-wrap: break-word; /* Ensure long words break */
 }
 .user-message .message {
-    background-color: #d1ecf1;
     color: #0c5460;
 }
 .ai-message .message {
-    color: #721c24;
+    color: #000000;
 }
 
 @media (max-width: 600px) {
