@@ -11,7 +11,7 @@ const responses = {
     "sakit":[
         "Istirahat aja dulu bu, kalo dibiarin takutnya malah nambah parah, semoga cepat sembuh ya bu!"
     ],
-    "sehat": [
+    "saya sehat": [
         "Alhamdulillah, ada yang bisa dibantu bu?"
     ],
     "baik":[
