@@ -24,13 +24,31 @@ const responses = {
     ],
     "nasi goreng spesial": [
         "Resep Nasi Goreng Spesial:\n" +
-        "1. Panaskan sedikit minyak di wajan.\n" +
-        "2. Tumis bawang putih dan bawang merah hingga harum.\n" +
-        "3. Masukkan telur, orak-arik sampai matang.\n" +
-        "4. Tambahkan nasi putih, aduk rata.\n" +
-        "5. Masukkan kecap manis, saus tiram, dan garam secukupnya.\n" +
-        "6. Aduk hingga semua bumbu merata. Tambahkan potongan ayam atau sosis kalau suka.\n" +
-        "7. Sajikan dengan kerupuk dan acar."
+        "Bahan-bahan:\n" +
+        "1 buah paha ayam atas bawah rebus, suwir ayamnya\n" +
+        "2 buah telur, kocok lepas\n" +
+        "150 g udang tanpa kulit\n" +
+        "5 buah bakso sapi, potong-potong\n" +
+        "5 buah bakso ikan, potong-potong\n" +
+        "500 g nasi putih\n" +
+        "2 sdm kecap manis\n" +
+        "1 sdt garam\n" +
+        "1/2 sdt gula pasir\n" +
+        "1 buah daun bawang, iris tipis\n" +
+        "1/2 sdm bawang goreng untuk taburan\n" +
+        "3 sdm minyak goreng untuk menumis\n" +
+        "Bumbu Tumbuk Kasar:\n" +
+        "1 sdt terasi, bakar\n" +
+        "3 buah cabai merah besar\n" +
+        "3 buah cabai merah keriting\n" +
+        "2 siung bawang putih\n" +
+        "Bahan Pelegkap:\n" +
+        "3 buah telur ceplook\n" +
+        "Cara memasak:\n" +
+        "1. Panaskan minyak. Tumis bumbu tumbuk kasar sampai harum. Sisihkan di pinggir wajan. Masukkan telur. Aduk sampai berbutir.\n" +
+        "2. Tambahkan ayam, udang, bakso. Aduk rata. Tambahkan nasi putih. Aduk- aduk. Masukkan KECAP MANIS BANGO, garam, dan gula pasir. Aduk sampai matang.\n" +
+        "3. Masukkan daun bawang. Aduk rata. Sajikan bersama telur ceplok dan taburan bawang merah goreng.\n" +
+        "Selamat menikmati 😋"
     ],
     "tumis sayur sehat": [
         "Resep Tumis Sayur Sehat:\n" +
