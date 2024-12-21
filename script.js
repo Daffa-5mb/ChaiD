@@ -4,40 +4,90 @@ const sendButton = document.getElementById('sendButton');
 
 const responses = {
     "halo": [
-        "Halo, ada yang bisa saya bantu hari ini, Bu?",
-        "Halo, Bu! Apa kabarnya? Perlu bantuan apa nih? 🏠",
-        "Hai! Lagi sibuk masak atau bersantai? 😄"
+        "Halo, Bu! Gimana hari ini?",
+        "Halo, ada yang bisa saya bantu? 😊",
+        "Hai! Lagi masak apa nih? 🧑‍🍳"
     ],
     "apa menu hari ini?": [
-        "Coba masak sayur asem, Bu. Seger banget tuh!",
-        "Kalau bingung, goreng telur sama sambal pasti enak!",
-        "Hari ini mungkin enak kalau bikin sop ayam, Bu!"
+        "Coba bikin nasi goreng spesial, pasti enak!",
+        "Kalau bingung, masak mie instan aja, Bu. Simpel tapi nikmat! 🍜",
+        "Saran saya sih bikin tumis sayur sehat, Bu!"
+    ],
+    "nasi goreng spesial": [
+        "Resep Nasi Goreng Spesial:\n" +
+        "1. Panaskan sedikit minyak di wajan.\n" +
+        "2. Tumis bawang putih dan bawang merah hingga harum.\n" +
+        "3. Masukkan telur, orak-arik sampai matang.\n" +
+        "4. Tambahkan nasi putih, aduk rata.\n" +
+        "5. Masukkan kecap manis, saus tiram, dan garam secukupnya.\n" +
+        "6. Aduk hingga semua bumbu merata. Tambahkan potongan ayam atau sosis kalau suka.\n" +
+        "7. Sajikan dengan kerupuk dan acar."
+    ],
+    "tumis sayur sehat": [
+        "Resep Tumis Sayur Sehat:\n" +
+        "1. Siapkan sayur seperti kangkung, bayam, atau sawi. Cuci bersih.\n" +
+        "2. Panaskan minyak di wajan.\n" +
+        "3. Tumis bawang putih hingga harum.\n" +
+        "4. Masukkan sayur, aduk rata.\n" +
+        "5. Tambahkan sedikit air, garam, dan kaldu bubuk.\n" +
+        "6. Masak hingga sayur layu tapi masih segar.\n" +
+        "7. Sajikan hangat."
     ],
     "cuci piring capek nih": [
-        "Sabar, Bu. Setelah ini bisa istirahat.",
-        "Capek sih, tapi dapur bersih bikin hati tenang, kan? 😁",
-        "Mungkin setelah cuci piring, bisa santai sambil nonton TV."
+        "Sabar ya, Bu. Setelah ini bisa rebahan! 🛏️",
+        "Capek sedikit, tapi hasilnya dapur bersih. Semangat!",
+        "Mungkin sambil denger lagu biar gak terasa capeknya?"
     ],
     "ada tips hemat gak?": [
-        "Beli barang saat diskon, Bu. Lumayan ngirit!",
-        "Coba bikin catatan belanja biar gak boros.",
-        "Masak sendiri dibanding beli di luar, pasti lebih hemat!"
+        "Beli barang saat diskon, lumayan hemat Bu! 🛒",
+        "Coba cek promo belanja online, sering ada cashback tuh.",
+        "Pakai listrik dan air secukupnya, hemat banget!"
     ],
     "siapa pembuatmu?": [
-        "Saya dibuat sama Daffa, orangnya sih santai tapi jenius. 🗿",
-        "Yang bikin saya itu Daffa. Hebat kan? 😄",
-        "Daffa yang bikin saya, Bu. Orangnya emang visioner banget!"
+        "Saya dibuat sama Daffa. Orangnya asik banget! 😄",
+        "Yang bikin saya Daffa, programmer muda berbakat! 🗿",
+        "Ini semua karya Daffa, hebat ya!"
     ],
     "terima kasih": [
-        "Sama-sama, Bu. Senang bisa membantu! 😊",
-        "Kapan-kapan ngobrol lagi ya, Bu. Jangan sungkan!",
-        "Sama-sama! Kalau ada yang perlu, panggil aja."
+        "Sama-sama, Bu. Senang bisa bantu! 😊",
+        "Kapan-kapan ngobrol lagi ya, Bu.",
+        "Sama-sama! Semoga harimu menyenangkan. 🌞"
     ],
     "lagi ngapain?": [
-        "Lagi siap buat bantu, Bu. Ada yang perlu?",
-        "Gak ngapa-ngapain, cuma nunggu panggilan Ibu. 😄",
-        "Lagi mikirin resep buat makan malam nih, Bu."
+        "Gak ngapa-ngapain, Bu. Nunggu dipanggil aja. 😁",
+        "Saya sih siap bantu kapan aja, Bu.",
+        "Lagi santai aja. Ada yang bisa dibantu?"
     ],
+    "cuaca gimana?": [
+        "Wah, saya gak tahu pasti. Coba lihat jendela ya, Bu.",
+        "Mungkin cerah, mungkin hujan. Siapkan payung aja!",
+        "Cuaca di hati selalu cerah, Bu! ☀️"
+    ],
+    "kamu bisa apa?": [
+        "Saya bisa bantu ngobrol dan kasih saran, Bu.",
+        "Bantu ibu-ibu rumah tangga aja, Bu. 😊",
+        "Gak banyak, tapi saya setia bantu kapan aja!"
+    ],
+    "aku kesel nih": [
+        "Kenapa, Bu? Ceritain aja, biar lega!",
+        "Sabar ya, Bu. Kalau mau marah, tarik napas dulu.",
+        "Kesel wajar, Bu. Tapi jangan terlalu lama, ya."
+    ],
+    "mau belanja, tapi bingung": [
+        "Beli yang perlu-perlu aja, Bu. Jangan kalap!",
+        "Catat dulu yang mau dibeli biar gak lupa.",
+        "Kalau ada promo, beli yang diskon dulu aja."
+    ],
+    "gimana caranya hemat listrik?": [
+        "Matikan lampu kalau gak perlu, Bu.",
+        "Jangan pakai alat listrik bareng-bareng.",
+        "Coba set AC di 25 derajat, lebih hemat."
+    ],
+    "resep masakan simpel?": [
+        "Tumis kangkung pake bawang putih aja, simpel banget.",
+        "Goreng telur terus kasih kecap, jadi deh!",
+        "Masak mie instan terus tambah sayur, Bu."
+    ]
 };
 
 function findBestMatch(userMessage) {
