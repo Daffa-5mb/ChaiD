@@ -11,7 +11,7 @@ const responses = {
     "sakit":[
         "Istirahat aja dulu bu, kalo dibiarin takutnya malah nambah parah, semoga cepat sembuh ya bu!"
     ],
-    "Alhamdulillah saya sehat": [
+    "saya sehat": [
         "Alhamdulillah, ada yang bisa dibantu bu?"
     ],
     "baik":[
@@ -102,7 +102,7 @@ const responses = {
 function findBestMatch(userMessage) {
     const lowerCaseMessage = userMessage.toLowerCase();
     for (const key in responses) {
-        if (lowerCaseMessage.includes(key.toLowerCase())) {
+        if (lowerCaseMessage.includes(key)) {
             const possibleResponses = responses[key];
             return possibleResponses[Math.floor(Math.random() * possibleResponses.length)];
         }
@@ -121,7 +121,7 @@ sendButton.addEventListener('click', () => {
     if (userMessage) {
         chatbox.innerHTML += `<div class="user-message"><strong>Lu:</strong> <span class="message">${sanitizeHTML(userMessage)}</span></div>`;
         userInput.value = '';
-
+        
         // Menentukan respons AI berdasarkan input pengguna
         const aiResponse = findBestMatch(userMessage);
 
