@@ -8,6 +8,15 @@ const responses = {
         "Halo, ada yang bisa saya bantu? 😊",
         "Hai! Lagi masak apa nih? 🧑‍🍳"
     ],
+    "sakit":[
+        "Istirahat aja dulu bu, kalo dibiarin takutnya malah nambah parah, semoga cepat sembuh ya bu!"
+    ],
+    "sehat": [
+        "Alhamdulillah, ada yang bisa dibantu bu?"
+    ],
+    "baik":[
+        "Alhamdulillah, ada yang bisa dibantu bu?"
+    ],
     "apa menu hari ini?": [
         "Coba bikin nasi goreng spesial, pasti enak!",
         "Kalau bingung, masak mie instan aja, Bu. Simpel tapi nikmat! 🍜",
