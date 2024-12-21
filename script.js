@@ -151,7 +151,7 @@ function sanitizeHTML(str) {
 sendButton.addEventListener('click', () => {
     const userMessage = userInput.value.trim(); // Hilangkan spasi di awal/akhir
     if (userMessage) {
-        chatbox.innerHTML += `<div class="user-message"><strong>Anda:</strong> <span class="message">${sanitizeHTML(userMessage)}</span></div>`;
+        chatbox.innerHTML += `<div class="user-message"><strong>Kamu:</strong> <span class="message">${sanitizeHTML(userMessage)}</span></div>`;
         userInput.value = '';
 
         // Menampilkan indikator mengetik
