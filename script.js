@@ -102,7 +102,7 @@ const responses = {
 function findBestMatch(userMessage) {
     const lowerCaseMessage = userMessage.toLowerCase();
     for (const key in responses) {
-        if (lowerCaseMessage.includes(key)) {
+        if (lowerCaseMessage.includes(key.toLowerCase())) {
             const possibleResponses = responses[key];
             return possibleResponses[Math.floor(Math.random() * possibleResponses.length)];
         }
@@ -110,17 +110,23 @@ function findBestMatch(userMessage) {
     return "Maaf saya tidak mengerti 🗿.";
 }
 
+function sanitizeHTML(str) {
+    const temp = document.createElement('div');
+    temp.textContent = str;
+    return temp.innerHTML;
+}
+
 sendButton.addEventListener('click', () => {
     const userMessage = userInput.value.trim(); // Hilangkan spasi di awal/akhir
     if (userMessage) {
-        chatbox.innerHTML += `<div class="user-message"><strong>Lu:</strong> <span class="message">${userMessage}</span></div>`;
+        chatbox.innerHTML += `<div class="user-message"><strong>Lu:</strong> <span class="message">${sanitizeHTML(userMessage)}</span></div>`;
         userInput.value = '';
-        
+
         // Menentukan respons AI berdasarkan input pengguna
         const aiResponse = findBestMatch(userMessage);
 
         setTimeout(() => {
-            chatbox.innerHTML += `<div class="ai-message"><strong>AI:</strong> <span class="message">${aiResponse}</span></div>`;
+            chatbox.innerHTML += `<div class="ai-message"><strong>AI:</strong> <span class="message">${sanitizeHTML(aiResponse)}</span></div>`;
             chatbox.scrollTop = chatbox.scrollHeight; // Scroll ke bawah
         }, 1000);
     }
