@@ -3,15 +3,41 @@ const userInput = document.getElementById('userInput');
 const sendButton = document.getElementById('sendButton');
 
 const responses = {
-    "halo": "Si manusia ngapain jir 😹",
-    "lah, ai gw kenapa jir 😹": "Nguwawor cik 😹",
-    "bre gw ada tugas nih": "Apa tuh wak? 🗿",
-    "tolong cariin pacar yang cocok sama gw 🗿": "404 😹",
-    "woilah 🗿": "Yaudah mau gimana lagi 😁",
-    "lu aja mau gak?": "Najis 🤮",
-    "gw shutdown lu anj 🗿🫵": "Iyadeh jangan ya sayang 😭",
-    "huek 🤮": "gblk 🗿",
-    "hehe 😁": "gak jelas lu sumpah 🗿"
+    "halo": [
+        "Halo, ada yang bisa saya bantu hari ini, Bu?",
+        "Halo, Bu! Apa kabarnya? Perlu bantuan apa nih? 🏠",
+        "Hai! Lagi sibuk masak atau bersantai? 😄"
+    ],
+    "apa menu hari ini?": [
+        "Coba masak sayur asem, Bu. Seger banget tuh!",
+        "Kalau bingung, goreng telur sama sambal pasti enak!",
+        "Hari ini mungkin enak kalau bikin sop ayam, Bu!"
+    ],
+    "cuci piring capek nih": [
+        "Sabar, Bu. Setelah ini bisa istirahat.",
+        "Capek sih, tapi dapur bersih bikin hati tenang, kan? 😁",
+        "Mungkin setelah cuci piring, bisa santai sambil nonton TV."
+    ],
+    "ada tips hemat gak?": [
+        "Beli barang saat diskon, Bu. Lumayan ngirit!",
+        "Coba bikin catatan belanja biar gak boros.",
+        "Masak sendiri dibanding beli di luar, pasti lebih hemat!"
+    ],
+    "siapa pembuatmu?": [
+        "Saya dibuat sama Daffa, orangnya sih santai tapi jenius. 🗿",
+        "Yang bikin saya itu Daffa. Hebat kan? 😄",
+        "Daffa yang bikin saya, Bu. Orangnya emang visioner banget!"
+    ],
+    "terima kasih": [
+        "Sama-sama, Bu. Senang bisa membantu! 😊",
+        "Kapan-kapan ngobrol lagi ya, Bu. Jangan sungkan!",
+        "Sama-sama! Kalau ada yang perlu, panggil aja."
+    ],
+    "lagi ngapain?": [
+        "Lagi siap buat bantu, Bu. Ada yang perlu?",
+        "Gak ngapa-ngapain, cuma nunggu panggilan Ibu. 😄",
+        "Lagi mikirin resep buat makan malam nih, Bu."
+    ],
 };
 
 function findBestMatch(userMessage) {
