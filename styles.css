@@ -79,3 +79,23 @@ h1 {
         padding: 8px;
     }
     }
+
+/* Animasi Mengetik */
+.typing-indicator {
+    display: inline-block;
+    width: 1ch;
+    height: 1em;
+    border-radius: 50%;
+    background: #000;
+    animation: typing 1s steps(1) infinite;
+    margin-left: 5px;
+}
+
+@keyframes typing {
+    0%, 20% {
+        background: #000;
+    }
+    50%, 100% {
+        background: transparent;
+    }
+}
